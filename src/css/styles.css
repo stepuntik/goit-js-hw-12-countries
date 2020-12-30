@@ -8,31 +8,84 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #fff;
-  color: #212121;
+  background: url(https://cdn.hipwallpaper.com/i/29/11/VwlI47.jpg);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  padding: 20px;
 }
 
-/* Article List */
-
-.article-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-gap: 16px;
-
-  padding: 0;
-  margin: 0;
-  list-style: none;
+h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
-.article-list img {
+ul {
+  padding-left: 22px;
+}
+
+.country-wrapper {
+  padding-top: 150px;
+}
+
+#search-bar {
+  font-size: inherit;
+  width: 80%;
   display: block;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 12px 18px;
+  outline: none;
+  backface-visibility: hidden;
+  transition: 0.1s ease-out;
+}
+
+#search-bar:focus {
+  box-shadow: 0px 2px 8px #918c8c;
+  transform: scale(1.02);
+}
+
+.country-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.country {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.country__flag {
+  max-width: 50%;
+}
+
+#flag {
+  display: block;
+  max-height: 300px;
   max-width: 100%;
+  transition: 0.2s ease-out;
+  backface-visibility: hidden;
+}
+
+#flag:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 2px 8px #918c8c;
+}
+
+.pnotify {
+  position: absolute;
+  left: 50%;
+  right: unset;
+  transform: translateX(-50%);
 }
 
 /* SPINNER */

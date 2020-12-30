@@ -7,19 +7,19 @@
     <title>JavaScript Essentials</title>
   </head>
   <body>
-    <form class="search-form" id="search-form">
+    <div class="country-wrapper">
       <input
+      id="search-bar"  
         type="text"
         name="query"
-        placeholder="Search news..."
+        placeholder="Search country..."
         autocomplete="off"
       />
-      <button type="submit">Search</button>
-    </form>
 
-    <ul class="article-list" id="article-list"></ul>
-
-    <button type="button" data-action="load-more">Load more</button>
+      <div class="country-container" id="country-container"></div>
+    </div> 
+    
+    <!-- <img src="https://w7.pngwing.com/pngs/689/7/png-transparent-globe-earth-discrete-global-grid-world-grid-miscellaneous-angle-logo.png" alt="" width="480"> -->
 
     <div class="spinner-overlay is-hidden" id="spinner">
       <div class="sk-circle">
@@ -37,5 +37,7 @@
         <div class="sk-circle12 sk-child"></div>
       </div>
     </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lodash.debounce@4.0.8/index.js"></script> -->
   </body>
 </html>

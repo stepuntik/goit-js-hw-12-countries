@@ -6,7 +6,7 @@ export default {
   fetchArticles() {
     const options = {
       headers: {
-        Authorization: '5b88481e2156441382975efd19981185',
+        Authorization: '5124683f16af4df2a1dd67b8c8ef50a1',
       },
     };
 
