@@ -9,16 +9,16 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://stepuntik.github.io/js-group-11-12",
+  "homepage": "https://stepuntik.github.io/goit-js-hw-12-countries/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stepuntik/js-group-11-12.git"
+    "url": "git+https://github.com/stepuntik/goit-js-hw-12-countries.git"
   },
   "keywords": [],
   "author": "Stepan Lavrenchuk <stepuntik@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/luxplanjay/js-group-11-12/issues"
+    "url": "https://github.com/stepuntik/goit-js-hw-12-countries/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
