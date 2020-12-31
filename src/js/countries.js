@@ -32,6 +32,8 @@ function fetchCountries() {
         insertCountriesList(countries);
       } else if (countries.length > 10) {
         insertSearchNotification();
+      } else if (countries.status === 404) {
+        insertNotFoundNotification();
       } else if (countries.status !== 404) {
         insertCountry(countries[0]);
       }
@@ -57,8 +59,20 @@ function insertSearchNotification() {
     text: 'Too many matches found. Please enter a more specific query!',
     title: false,
     closer: false,
-    width: '300px',
-    delay: 100000,
+    width: '100%',
+    delay: 2000,
+    sticker: false,
+    maxTextHeight: null,
+  });
+}
+
+function insertNotFoundNotification() {
+  PNotify.error({
+    text: 'Incorrect input. Please enter a proper country name!',
+    title: false,
+    closer: false,
+    width: '100%',
+    delay: 2000,
     sticker: false,
     maxTextHeight: null,
   });
